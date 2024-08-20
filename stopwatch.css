@@ -7,7 +7,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #141831;
+    background-image: url("assets/pexels-mike-468229-1178683.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat; 
+   backdrop-filter: brightness(50%);
+   backdrop-filter: blur(5px);
 }
 
 .stopwatch-container {
@@ -20,24 +25,26 @@ body {
 
 .circle {
     position: relative;
-    width: 300px;
-    height: 150px;
-    background: conic-gradient(#ff6b6b, #feca57);
+    z-index: 1;
+    width: 500px;
+    height: 250px;
+    background: conic-gradient(#1934ad, #57d7fe);
    border-radius: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    opacity:0.7;
 }
 
  
 
 #time {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    font-size: 24px;
+    font-size: 100px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
 .stopwatch-controls button {
@@ -47,13 +54,13 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #ff6b6b;
+    background-color: #128d68;
     color: white;
     transition: background-color 0.3s;
 }
 
 .stopwatch-controls button:hover {
-    background-color: #ee5253;
+    background-color: #36c2aa;
 }
 
 #laps {
@@ -64,7 +71,7 @@ body {
 #laps li {
     margin: 5px 0;
     padding: 5px;
-    background-color: #feca57;
+    background-color: #57cffe;
     border-radius: 5px;
-    color: #333;
+    color: #333333;
 }
